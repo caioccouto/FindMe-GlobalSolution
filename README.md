@@ -11,7 +11,7 @@ divulgação responsável de casos de desaparecimento de crianças e adolescente
 | Guilherme Eustáquio | 566784 | 2TDSPS |
 | Matheus Tavares     | 566844 | 2TDSPS |
 
-- **Vídeo Pitch:** (preencher)
+- **Vídeo Pitch:** https://youtu.be/PcG6leIJaSc
 - **Repositório:** https://github.com/caioccouto/FindMe-GlobalSolution.git
 
 ## Como executar
