@@ -2,14 +2,10 @@ spring:
   application:
     name: findme
   datasource:
-    url: jdbc:h2:file:./data/findme
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
+    url: jdbc:mysql://${DB_HOST:mysql}:${DB_PORT:3306}/${DB_NAME:findme}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,7 +16,7 @@ spring:
 
 app:
   jwt:
-    secret: ${JWT_SECRET:ZmluZG1lLWRldi1zZWNyZXQta2V5LWF0LWxlYXN0LTMyLWJ5dGVzIQ==}
+    secret: ${JWT_SECRET}
     expiration-ms: 3600000
   seed:
     moderador:
